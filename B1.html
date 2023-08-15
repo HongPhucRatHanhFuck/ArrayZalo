@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+</head>
+<body>
+<script>
+	let number = [22, 7, 5, 15, 2, -6];
+	let o = 0;
+	let max = number[0];
+	let sum = 0;
+	let count = 0;
+	for (let i = 0; i < number.length; i++) {
+	// //B1	console.log(`phan tu thu ${i} co gia tri la: ${number[i]}}`)
+	// }
+	
+	// //B2	if(i % 2 ===0){
+	// 		console.log(`Cac phan tu chan trong mang la: ${i}`)
+	// 	}
+	// }
+	
+	// //B3	if (i %2 ===0){
+	// 		console.log(`Phan tu thu ${i} co gia tri la:${number[i]}`)
+	// 	}
+	// }
+	
+	// //B4
+	// 	if (number[i] % 2===0){
+	// 		sum += number[i];
+	// 	}
+	// }
+	// console.log(sum)
+	
+	// //B5
+	// 	if (number[i] > 5) {
+	// 		sum += number[i];
+	// 	}
+	// }
+	// alert(sum);
+	
+	// //B6
+	//
+	
+	// //B7
+	// 	if (number[i] > max) {
+	// 		max = number[i];
+	// 	}
+	// }
+	// alert(max)
+	
+	// //B8
+	// 	if (number[i] > max && number[i] % 2 === 0) {
+	// 		max = number[i]
+	// 	}
+	// }
+	// alert(max);
+	
+	// //B9
+	// if (number[i] % 5 ===0){
+	// 	count++;
+	// 	}
+	// }
+	// alert(count);
+	
+	// //B10
+	if (number[i] % 5 ===0){
+		count++;
+		o+= number[i];
+		number[i] = o;
+		}
+	}
+	document.write("Trung binh cac phan tu chia het cho 5 trong mang la:" + o/count);
+
+</script>
+</body>
+</html>
